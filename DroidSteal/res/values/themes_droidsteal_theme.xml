@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="droidsteal_theme" parent="android:Theme.Holo">
+
+    <item name="android:editTextBackground">@drawable/droidsteal_theme_edit_text_holo_dark</item>
+
+    <item name="android:textColorHighlight">#99cc0000</item>
+
+    <item name="android:textSelectHandleLeft">@drawable/droidsteal_theme_text_select_handle_left</item>
+
+    <item name="android:textSelectHandleRight">@drawable/droidsteal_theme_text_select_handle_right</item>
+
+    <item name="android:textSelectHandle">@drawable/droidsteal_theme_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewdroidsteal_theme</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/droidsteal_theme_btn_check_holo_dark</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/droidsteal_theme_btn_radio_holo_dark</item>
+
+    <item name="android:buttonStyle">@style/Buttondroidsteal_theme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtondroidsteal_theme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/Spinnerdroidsteal_theme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBardroidsteal_theme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBardroidsteal_theme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBardroidsteal_theme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigdroidsteal_theme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmalldroidsteal_theme</item>
+
+    <item name="android:buttonStyleToggle">@style/Toggledroidsteal_theme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/droidsteal_theme_list_selector_holo_dark</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/droidsteal_theme_activated_background_holo_dark</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/droidsteal_theme_fastscroll_thumb_holo</item>
+
+    <item name="android:actionBarStyle">@style/ActionBar.Solid.DS_Style</item>
+
+  </style>
+
+</resources>

@@ -16,11 +16,18 @@ Things to remember:
 
 5. Be Ethical
 
+Libraries/Dependencies
+======================
+We use these awesome libraries:
+* [SystemBarTint](https://github.com/jgilfelt/SystemBarTint) 1.0.3 library licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0)
+
+All wrapped up in a tidy little bow thanks to gradle.
+
 Downloads
 =========
-All new builds will be hosted on this repo with GitHub's release system: https://github.com/Zbob750/DroidSteal/releases
+All recent builds are hosted [here on this repo's releases page](https://github.com/Zbob750/DroidSteal/releases)
 
-All old/unsupported/out-of-date builds are hosted here: http://goo.gl/Iq7JZ
+All really ridiculously old (and completely unsupported) builds are located [here](http://goo.gl/Iq7JZ)
 
 
 

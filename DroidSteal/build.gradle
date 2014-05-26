@@ -1,0 +1,34 @@
+apply plugin: 'android'
+
+dependencies {
+    compile fileTree(dir: 'libs/', include: '*.jar')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1"
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        instrumentTest.setRoot('tests')
+    }
+}

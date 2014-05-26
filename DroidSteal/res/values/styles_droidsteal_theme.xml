@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ActionBar.Solid.DS_Style" parent="@android:style/Widget.Holo.ActionBar.Solid">
+      <item name="android:background">@color/droidsteal_theme_color</item>
+  </style>
+
+  <style name="AutoCompleteTextViewdroidsteal_theme" parent="android:Widget.Holo.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/droidsteal_theme_list_selector_holo_dark</item>
+	    <item name="android:background">@drawable/droidsteal_theme_edit_text_holo_dark</item>
+  </style>
+
+  <style name="Buttondroidsteal_theme" parent="android:Widget.Holo.Button">
+	  <item name="android:background">@drawable/droidsteal_theme_btn_default_holo_dark</item>
+  </style>
+
+  <style name="ImageButtondroidsteal_theme" parent="android:Widget.Holo.ImageButton">
+	  <item name="android:background">@drawable/droidsteal_theme_btn_default_holo_dark</item>
+  </style>
+
+  <style name="Spinnerdroidsteal_theme" parent="android:Widget.Holo.Spinner">
+      <item name="android:background">@drawable/droidsteal_theme_spinner_background_holo_dark</item>
+      <item name="android:dropDownSelector">@drawable/droidsteal_theme_list_selector_holo_dark</item>
+  </style>
+
+  <style name="ProgressBardroidsteal_theme" parent="android:Widget.Holo.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/droidsteal_theme_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/droidsteal_theme_progress_indeterminate_horizontal_holo_dark</item>
+  </style>
+
+  <style name="SeekBardroidsteal_theme" parent="android:Widget.Holo.SeekBar">
+      <item name="android:progressDrawable">@drawable/droidsteal_theme_scrubber_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/droidsteal_theme_scrubber_progress_horizontal_holo_dark</item>
+      <item name="android:thumb">@drawable/droidsteal_theme_scrubber_control_selector_holo_dark</item>
+  </style>
+
+  <style name="RatingBardroidsteal_theme" parent="android:Widget.Holo.RatingBar">
+      <item name="android:progressDrawable">@drawable/droidsteal_theme_ratingbar_full_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/droidsteal_theme_ratingbar_full_holo_dark</item>
+  </style>
+
+  <style name="RatingBarBigdroidsteal_theme" parent="android:Widget.Holo.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/droidsteal_theme_ratingbar_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/droidsteal_theme_ratingbar_holo_dark</item>
+  </style>
+
+  <style name="RatingBarSmalldroidsteal_theme" parent="android:Widget.Holo.RatingBar.Small">
+      <item name="android:progressDrawable">@drawable/droidsteal_theme_ratingbar_small_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/droidsteal_theme_ratingbar_small_holo_dark</item>
+  </style>
+
+  <style name="Toggledroidsteal_theme" parent="android:Widget.Holo.Button.Toggle">
+      <item name="android:background">@drawable/droidsteal_theme_btn_toggle_holo_dark</item>
+  </style>
+
+</resources>

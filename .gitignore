@@ -16,7 +16,7 @@ bin/
 gen/
 
 # Libraries
-libs/
+libs/*.jar
 
 # proguard stuff
 proguard/
