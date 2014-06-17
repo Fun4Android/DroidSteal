@@ -42,6 +42,8 @@ import com.zbrown.droidsteal.helper.Constants;
 import com.zbrown.droidsteal.objects.CookieWrapper;
 import org.apache.http.cookie.Cookie;
 
+import java.util.logging.Logger;
+
 
 public class HijackActivity extends Activity implements Constants {
     private WebView webview = null;
@@ -190,8 +192,15 @@ public class HijackActivity extends Activity implements Constants {
     @Override
     protected void onStart() {
         super.onStart();
+        Object o = null;
 
-        Object o = this.getIntent().getExtras().getSerializable(Constants.BUNDLE_KEY_AUTH);
+        try {
+            o = this.getIntent().getExtras().getSerializable(Constants.BUNDLE_KEY_AUTH);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+            finish();
+        }
+
         authToHijack = (Auth) o;
 
         if (authToHijack == null) {
