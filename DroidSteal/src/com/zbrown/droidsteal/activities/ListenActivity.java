@@ -1,19 +1,19 @@
 /*
  * ListenActivity.java is the starting Activity, listening for cookies Copyright
  * (C) 2013-2014 Zach Brown <Zbob75x@gmail.com>
- * 
+ *
  * This software was supported by the University of Trier
- * 
+ *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation; either version 3 of the License, or (at your option) any later
  * version.
- * 
+ *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- * 
+ *
  * You should have received a copy of the GNU General Public License along with
  * this program; if not, write to the Free Software Foundation, Inc., 51
  * Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
@@ -29,7 +29,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
@@ -66,7 +65,6 @@ import java.util.*;
 public class ListenActivity extends Activity implements OnClickListener, OnItemClickListener, OnItemLongClickListener,
         OnCreateContextMenuListener, OnCheckedChangeListener, Constants {
 
-    private static final int MENU_ABOUT_ID = 5;
     private static final ArrayList<Auth> authListUnsynchronized = new ArrayList<Auth>();
     public static final List<Auth> authList = Collections.synchronizedList(authListUnsynchronized);
     public static StringBuffer debugBuffer = null;
@@ -177,7 +175,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         if (currentapiVersion >= Build.VERSION_CODES.KITKAT) {
             SystemBarTintManager barTint = new SystemBarTintManager(this);
 
-            int actionBarColor = Color.parseColor("#cc0000"); // Same color as our actionbar and theme
+            int actionBarColor = getResources().getColor(R.color.droidsteal_theme_color);
             barTint.setStatusBarTintColor(actionBarColor);
             //barTint.setNavigationBarTintColor(actionBarColor);
 
@@ -637,7 +635,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         if (listening) {
             if (debugging) {
                 bstartstop.setText("Stop debugging");
-                actionbar.setSubtitle("DEBUGGING");
+                //actionbar.setSubtitle("DEBUGGING");
             } else {
                 bstartstop.setText("Stop");
             }
@@ -708,7 +706,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         Intent notificationIntent = new Intent(ListenActivity.this, ListenActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
-        String notificationTitle = "DroidSteal is listening for sessions";
+        String notificationTitle = null;
         String notificationText = auth != null ? auth.getUrl() : getString(R.string.notification_text);
 
         if (persistent) {

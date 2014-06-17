@@ -42,8 +42,6 @@ import com.zbrown.droidsteal.helper.Constants;
 import com.zbrown.droidsteal.objects.CookieWrapper;
 import org.apache.http.cookie.Cookie;
 
-import java.util.logging.Logger;
-
 
 public class HijackActivity extends Activity implements Constants {
     private WebView webview = null;
