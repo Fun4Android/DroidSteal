@@ -79,4 +79,13 @@
         <cookiename>__utmb</cookiename>
         <cookiename>__utmc</cookiename>
     </auth>
+    <auth>
+        <name>XDA developers</name>
+        <domain>.xda-developers.com</domain>
+        <url>http://forum.xda-developers.com</url>
+        <cookiename>bbuserid</cookiename>
+        <cookiename>bbpassword</cookiename>
+        <cookiename>bbsessionhash</cookiename>
+        <cookiename>bbloggedin</cookiename>
+    </auth>
 </authdefinitions>

@@ -105,6 +105,8 @@ public class AuthListAdapter extends BaseAdapter {
             imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.reddit));
         } else if (auth.getUrl().contains("edmodo")) {
             imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.edmodo));
+        } else if (auth.getUrl().contains("xda-developers")) {
+            imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.xda));
         } else {
             imgView.setImageDrawable(context.getResources().getDrawable(R.drawable.droidsteal_square));
         }
